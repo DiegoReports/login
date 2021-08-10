@@ -1,0 +1,130 @@
+:root {
+    --bgcolor-header-linear-from: rgba(107, 120, 143, 0.5);
+    --bgcolor-header-linear-to: rgba(52, 57, 65, 0.856);
+    --bgcolor-button-linear-from: #fc8898;
+    --bgcolor-button-linear-to: #ffb961;
+    --bgcolor-button-facebook: #3b599a;
+    --bgcolor-button-google: #de4b38;
+    --bgcolor-social-button-hover: #FFF;
+    --bgcolor-footer: #353738;
+    
+    --color-header-title: #FFFF00;
+    --color-header-subtitle: #FFF;
+    --color-shadow: #bdbdbd;
+    --color-border-bottom: #ff942f;
+    --color-default-tab-forms: #d5dbe2;
+    --color-link-forms: #2f3169;
+    --color-font-input: #3d4046;
+    --color-border-input: #dee0e4;
+    --color-border-button-facebook: #627db4;
+    --color-border-button-google: #eb6f5f;
+    --color-font-default-button: #FFF;
+
+    --color-gray-700: #afb7be;
+    --color-gray-900: #5c6169;
+    --color-white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+html, body {
+    height: 100%; /*Elementos pai e app 100% altura 
+} */
+
+body {
+    font-family: 'Archivo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+}
+
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#app .header {
+    height: 40%;
+    padding: 3.5rem 0 0 1rem; /* rem - unidade de medida Resp. */
+    background-image: linear-gradient(to bottom, var(--bgcolor-header-linear-from), var(--bgcolor-header-linear-to)),
+                      url('./assets/img1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#app h1 {
+    color: var(--color-header-title);
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+#app .header p {
+    color: var(--color-header-subtitle);
+    font-weight: 200;
+}
+
+#app .footer {
+    display: flex;
+    flex: 1; /* Preenche o restante da tela com o compt. */
+    flex-direction: column;
+    padding: 4rem 0 1rem;
+    background-color: var(--bgcolor-footer);
+    justify-content: flex-end; /* Movimenta obj fim da pag */
+    align-items: center;
+}
+
+#app .footer p {
+    color: var(--color-gray-900);
+    font-size: 0.825rem;
+}
+
+#app .footer .social-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#app .footer .social-buttons button {
+    color: var(--color-font-default-button);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    height: 40px;
+    margin: 0 0.5rem;
+    width: 130px;
+}
+
+#app .footer .social-buttons button i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+#app .footer .social-buttons button.facebook {
+    border: 2px solid var(--color-border-button-facebook);
+    background-color: var(--bgcolor-button-facebook);
+}
+
+#app .footer .social-buttons button.facebook:hover {
+    border: 2px solid var(--bgcolor-button-facebook);
+    color: var(--bgcolor-button-facebook);
+}
+
+#app .footer .social-buttons button.google {
+    border: 2px solid var(--color-border-button-google);
+    background-color: var(--bgcolor-button-google);
+}
+
+#app .footer .social-buttons button.google:hover {
+    border: 2px solid var(--color-border-button-google);
+    color: var(--bgcolor-button-google);
+}
+
+#app .footer .social-buttons button:hover {
+    transition: all 0.26s ease-out;
+    background-color: var(--bgcolor-social-button-hover);
+}

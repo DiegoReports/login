@@ -5,9 +5,6 @@ Página de Login (Clone Dibble)
 
 <p align="center">Layout do <a href="https://dribbble.com/shots/5341927-Login-Signup/attachments/10815990?mode=media">Dibble</a></p>
 <br>
-<img src="./assets/screen.png" alt="screenshot de tela animada do clone do Pinterest">
-
-<br>
 
 ## Utilizamos:
 

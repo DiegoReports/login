@@ -68,6 +68,143 @@ body {
     font-weight: 200;
 }
 
+/* FIM HEADER */
+
+/* FORM */
+#app .forms {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .forms .wrapper-form {
+    min-height: 200px;
+    width: 100%;
+    margin-top: -8rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0px 5px 20px -5px var(--color-shadow);
+}
+
+#app .forms .wrapper-form ul {
+    list-style: none;
+    padding: 1.4rem 0 0;
+    background-color: #fff;
+    display: flex;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+#app .forms .wrapper-form li {
+    width: 50%;
+    text-align: center;
+}
+
+#app .forms .wrapper-form ul li strong {
+    color: var(--color-default-tab-forms);
+    cursor: pointer;
+    padding-bottom: 0.20rem;
+    border-bottom: 0.20rem solid transparent;
+}
+
+#app .forms .wrapper-form ul li.active strong,
+#app .forms .wrapper-form ul li:hover strong {
+     color: var(--color-link-forms);
+     border-bottom: 0.20rem solid var(--color-border-bottom);
+     transition: all 0.25s ease-in-out;
+}
+
+#app .forms .wrapper-form .form-login {
+    padding: 1.4rem 1rem 2rem;
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#app .forms .wrapper-form .form-login .form-group {
+    margin: 1rem 0rem;
+}
+
+#app .forms .wrapper-form .form-login .form-group:first-child {
+    margin-top: 0;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-input {
+    border: 1px solid var(--color-border-input);
+    border-radius: 5rem;
+    height: 45px;
+    display: flex;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-input strong {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray-700);
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-input input {
+    background: none;
+    border: none;
+    color: var(--color-font-input);
+    height: 45px;
+    outline: none;
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-input input::placeholder {
+    color: var(--color-gray-700);
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.785rem;
+    padding: 0 1rem;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password .wrapper-remember-password {
+    display: flex;
+    align-items: center;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password .wrapper-remember-password input {
+    height: 15px;
+    width: 15px;
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password .wrapper-remember-password p {
+    margin: 0;
+    margin-left: 0.285rem;
+    color: var(--color-gray-700);
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password a {
+    text-decoration: none;
+    color: var(--color-gray-700);
+}
+
+#app .forms .wrapper-form .form-login .form-group .form-remember-password a:hover {
+    color: #000;
+}
+
+/* FIM FORM */
+
+/* FOOTER */
+
 #app .footer {
     display: flex;
     flex: 1; /* Preenche o restante da tela com o compt. */

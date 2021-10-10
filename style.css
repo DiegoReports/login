@@ -130,6 +130,7 @@ body {
     background-color: #fff;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    /* display: none; */
 }
 
 #app .forms .wrapper-form .form-login .button-submit,

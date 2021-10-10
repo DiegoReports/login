@@ -267,6 +267,7 @@ body {
     background-color: var(--bgcolor-footer);
     justify-content: flex-end; /* Movimenta obj fim da pag */
     align-items: center;
+    width: 100%;
 }
 
 #app .footer p {
@@ -284,10 +285,11 @@ body {
     color: var(--color-font-default-button);
     border-radius: 2rem;
     cursor: pointer;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     height: 40px;
     margin: 0 0.5rem;
     width: 130px;
+    font-family: 'Archivo', sans-serif;
 }
 
 #app .footer .social-buttons button i {
@@ -298,24 +300,25 @@ body {
 #app .footer .social-buttons button.facebook {
     border: 2px solid var(--color-border-button-facebook);
     background-color: var(--bgcolor-button-facebook);
-}
-
-#app .footer .social-buttons button.facebook:hover {
+  }
+  
+  #app .footer .social-buttons button.facebook:hover {
     border: 2px solid var(--bgcolor-button-facebook);
     color: var(--bgcolor-button-facebook);
-}
-
-#app .footer .social-buttons button.google {
+  }
+  
+  #app .footer .social-buttons button.google {
     border: 2px solid var(--color-border-button-google);
     background-color: var(--bgcolor-button-google);
-}
-
-#app .footer .social-buttons button.google:hover {
-    border: 2px solid var(--color-border-button-google);
+  }
+  
+  #app .footer .social-buttons button.google:hover {
+    border: 2px solid var(--bgcolor-button-google);
     color: var(--bgcolor-button-google);
-}
-
-#app .footer .social-buttons button:hover {
-    transition: all 0.26s ease-out;
+  }
+  
+  #app .footer .social-buttons button:hover {
+    transition: all 0.5s ease-out;
     background-color: var(--bgcolor-social-button-hover);
-}
+  }
+  
